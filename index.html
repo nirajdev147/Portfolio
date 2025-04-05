@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Niraj Dev</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#6C63FF',secondary:'#121212'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+
+<div class="animated-bg"></div>
+<!-- Navigation -->
+<nav class="nav-glass fixed w-full z-50 px-6 py-4">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<a href="#home" class="text-2xl font-bold text-white">Niraj<span class="text-primary">.dev</span></a>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-white hover:text-primary transition-colors">Home</a>
+<a href="#skills" class="text-white hover:text-primary transition-colors">Skills</a>
+<a href="#portfolio" class="text-white hover:text-primary transition-colors">Portfolio</a>
+<a href="#contact" class="text-white hover:text-primary transition-colors">Contact</a>
+</div>
+<div class="md:hidden w-8 h-8 flex items-center justify-center cursor-pointer" id="menu-toggle">
+<i class="ri-menu-line text-white ri-lg"></i>
+</div>
+</div>
+
+
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-secondary absolute top-16 left-0 w-full p-4 shadow-lg" id="mobile-menu">
+<div class="flex flex-col space-y-4">
+<a href="#home" class="text-white hover:text-primary transition-colors py-2">Home</a>
+<a href="#skills" class="text-white hover:text-primary transition-colors py-2">Skills</a>
+<a href="#portfolio" class="text-white hover:text-primary transition-colors py-2">Portfolio</a>
+<a href="#contact" class="text-white hover:text-primary transition-colors py-2">Contact</a>
+</div>
+</div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center pt-20 relative">
+<div class="container mx-auto px-6 py-20">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+<div class="relative overflow-hidden rounded-full border-4 border-primary w-64 h-64 transform transition-transform hover:scale-105 floating">
+<img src="/images/myimage1.jpg" alt="Niraj Dev" class="w-full h-full object-cover">
+</div>
+</div>
+<div class="md:w-1/2 text-center md:text-left">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-primary typing-effect">Niraj Dev</span></h1>
+<h2 class="text-2xl md:text-3xl font-light mb-6">Frontend Developer & UI/UX Designer</h2>
+<p class="text-gray-300 mb-8 max-w-lg">I craft beautiful, functional, and user-centered digital experiences. With expertise in HTML, CSS, JavaScript, and UI/UX design, I transform ideas into engaging interfaces.</p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+<a href="#portfolio" class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap ripple glow-effect">View My Work</a>
+<a href="#contact" class="border border-white text-white px-8 py-3 !rounded-button font-medium hover:bg-white hover:text-secondary transition-all whitespace-nowrap ripple magnetic-button">Contact Me</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+<div class="w-8 h-12 flex items-center justify-center">
+<i class="ri-arrow-down-line text-white ri-2x"></i>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-[#1a1a1a]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 section-transition">
+<h2 class="text-4xl font-bold mb-4">My <span class="text-gradient">Skills</span></h2>
+<p class="text-gray-300 max-w-2xl mx-auto">I've spent years honing my skills in frontend development and design. Here's what I bring to the table.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- HTML Skill -->
+<div class="bg-[#222222] p-6 rounded-lg skill-card section-transition rotate-3d">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto pulse">
+<i class="ri-html5-line text-primary ri-2x skill-icon"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-center">HTML5</h3>
+<div class="flex justify-between mb-2">
+<span class="text-gray-300">Expertise</span>
+<span class="text-primary">95%</span>
+</div>
+<div class="progress-bar html-progress mb-4"></div>
+<p class="text-gray-400 text-sm">Semantic markup, accessibility, SEO optimization, and modern HTML5 features.</p>
+</div>
+<!-- CSS Skill -->
+<div class="bg-[#222222] p-6 rounded-lg skill-card section-transition rotate-3d">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto pulse">
+<i class="ri-css3-line text-primary ri-2x skill-icon"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-center">CSS3</h3>
+<div class="flex justify-between mb-2">
+<span class="text-gray-300">Expertise</span>
+<span class="text-primary">90%</span>
+</div>
+<div class="progress-bar css-progress mb-4"></div>
+<p class="text-gray-400 text-sm">Responsive design, animations, Flexbox, Grid, SASS/SCSS, and CSS frameworks.</p>
+</div>
+<!-- JavaScript Skill -->
+<div class="bg-[#222222] p-6 rounded-lg skill-card section-transition rotate-3d">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto pulse">
+<i class="ri-javascript-line text-primary ri-2x skill-icon"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-center">JavaScript</h3>
+<div class="flex justify-between mb-2">
+<span class="text-gray-300">Expertise</span>
+<span class="text-primary">85%</span>
+</div>
+<div class="progress-bar js-progress mb-4"></div>
+<p class="text-gray-400 text-sm">ES6+, DOM manipulation, async programming, and modern JS frameworks.</p>
+</div>
+<!-- UI/UX Skill -->
+<div class="bg-[#222222] p-6 rounded-lg skill-card section-transition rotate-3d">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto pulse">
+<i class="ri-palette-line text-primary ri-2x skill-icon"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-center">UI/UX Design</h3>
+<div class="flex justify-between mb-2">
+<span class="text-gray-300">Expertise</span>
+<span class="text-primary">92%</span>
+</div>
+<div class="progress-bar uiux-progress mb-4"></div>
+<p class="text-gray-400 text-sm">User research, wireframing, prototyping, interaction design, and usability testing.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 section-transition">
+<h2 class="text-4xl font-bold mb-4">My <span class="text-gradient">Portfolio</span></h2>
+<p class="text-gray-300 max-w-2xl mx-auto">Here's a selection of my recent projects showcasing my skills and expertise.</p>
+</div>
+<div class="flex justify-center mb-10 section-transition">
+<div class="inline-flex bg-[#222222] p-1 rounded-full">
+<button class="portfolio-filter active px-6 py-2 rounded-full bg-primary text-white whitespace-nowrap" data-filter="all">All Projects</button>
+<button class="portfolio-filter px-6 py-2 rounded-full text-white hover:bg-[#333333] whitespace-nowrap" data-filter="web">Web Design</button>
+<button class="portfolio-filter px-6 py-2 rounded-full text-white hover:bg-[#333333] whitespace-nowrap" data-filter="ui">UI/UX</button>
+<button class="portfolio-filter px-6 py-2 rounded-full text-white hover:bg-[#333333] whitespace-nowrap" data-filter="app">App Design</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio Item 1 -->
+<!-- <div class="portfolio-item section-transition spotlight" data-category="web">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/webpage1.png" alt="Bharatloads landing page" class="w-full h-64 object-cover">
+<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Luxury Bharatloads Platform">BharatLoads Landing Page Design</h3>
+<p class="text-gray-300 text-center mb-4">Responsive bharatloads website with modern UI.</p>
+<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+</div>
+</div>
+</div> -->
+<!-- Portfolio Item 2 -->
+<!-- <div class="portfolio-item section-transition spotlight" data-category="web">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/webpage2.png" alt="Portfolio webpage design" class="w-full h-64 object-cover">
+<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Portfolio Webpage Platform">Portfolio Webpage Design</h3>
+<p class="text-gray-300 text-center mb-4">A clean portfolio webpage design with modern UI.</p>
+<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+</div>
+</div>
+</div> -->
+
+<!-- Portfolio Item 3 -->
+<div class="portfolio-item section-transition spotlight" data-category="ui">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/webpage1.png" alt="Bharatloads landing page" class="w-full h-64 object-cover">
+<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Luxury Bharatloads Platform">BharatLoads Landing Page Design</h3>
+<p class="text-gray-300 text-center mb-4">Responsive bharatloads website with modern UI.</p>
+<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+</div>
+</div>
+</div>
+
+<!-- Portfolio Item 4 -->
+<div class="portfolio-item section-transition spotlight" data-category="ui">
+  <div class="relative overflow-hidden rounded-lg">
+  <img src="/images/webpage2.png" alt="Portfolio webpage design" class="w-full h-64 object-cover">
+  <div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+  <h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Portfolio Webpage Platform">Portfolio Webpage Design</h3>
+  <p class="text-gray-300 text-center mb-4">A clean portfolio webpage design with modern UI.</p>
+  <a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+  </div>
+  </div>
+  </div>
+<!-- Portfolio Item 5 -->
+<div class="portfolio-item section-transition spotlight" data-category="ui">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/Dashboard design.png" alt="Finance App UI" class="w-full h-64 object-cover">
+<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Finance Dashboard UI">Finance Dashboard UI</h3>
+<p class="text-gray-300 text-center mb-4">Modern finance app interface with intuitive data visualization and user-friendly controls.</p>
+<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 6 -->
+<div class="portfolio-item section-transition" data-category="app">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/App Design1.png" alt="Fitness App" class="w-full h-64 object-cover">
+<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2">AI-POWERED-CHATBOT-DESIGN</h3>
+<p class="text-gray-300 text-center mb-4">Comprehensive fitness application with workout tracking and progress visualization.</p>
+<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">View Project</a>
+</div>
+</div>
+</div>
+
+
+<!-- Portfolio Item 7-->
+<div class="portfolio-item section-transition" data-category="app">
+  <div class="relative overflow-hidden rounded-lg">
+  <img src="/images/App Design2.png" alt="mobile app user registration design" class="w-full h-64 object-cover">
+  <div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+  <h3 class="text-xl font-semibold mb-2">Mobile App User Registration Flow</h3>
+  <p class="text-gray-300 text-center mb-4">The mobile app registration flow enables users to quickly sign up and start using the app.</p>
+  <a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">View Project</a>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-[#1a1a1a]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 section-transition">
+<h2 class="text-4xl font-bold mb-4">Get In <span class="text-gradient">Touch</span></h2>
+<p class="text-gray-300 max-w-2xl mx-auto">Have a project in mind or want to collaborate? Feel free to reach out to me using the form below.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="section-transition">
+<div class="bg-[#222222] p-8 rounded-lg">
+<form id="contact-form">
+<div class="mb-6">
+<label for="name" class="block text-gray-300 mb-2">Your Name</label>
+<input type="text" id="name" class="w-full bg-[#333333] border-none text-white px-4 py-3 rounded focus:ring-2 focus:ring-primary" placeholder="Enter your full name" required>
+</div>
+<div class="mb-6">
+<label for="email" class="block text-gray-300 mb-2">Your Email</label>
+<input type="email" id="email" class="w-full bg-[#333333] border-none text-white px-4 py-3 rounded focus:ring-2 focus:ring-primary" placeholder="Enter your email" required>
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-gray-300 mb-2">Subject</label>
+<input type="text" id="subject" class="w-full bg-[#333333] border-none text-white px-4 py-3 rounded focus:ring-2 focus:ring-primary" placeholder="Enter the subject" required>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-300 mb-2">Message</label>
+<textarea id="message" rows="5" class="w-full bg-[#333333] border-none text-white px-4 py-3 rounded focus:ring-2 focus:ring-primary" placeholder="Enter your message" required></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all w-full whitespace-nowrap ripple glow-effect">Send Message</button>
+</form>
+</div>
+</div>
+<div class="section-transition">
+<div class="bg-[#222222] p-8 rounded-lg">
+<h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-1">Email</h4>
+<p class="text-gray-300">devniraj4@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-1">Phone</h4>
+<p class="text-gray-300">+977-9876543210</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-1">Location</h4>
+<p class="text-gray-300">Biratnagar, Nepal</p>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<h4 class="text-lg font-medium mb-4">Connect With Me</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-[#333333] rounded-full social-icon" id="github-link">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-[#333333] rounded-full social-icon" id="linkedin-link">
+<i class="ri-linkedin-fill text-white"></i>
+</a>
+<!-- <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#333333] rounded-full social-icon" id="dribble-link">
+<i class="ri-dribbble-fill text-white"></i>
+</a> -->
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-[#333333] rounded-full social-icon" id="behance-link">
+<i class="ri-behance-fill text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-10 bg-[#121212] border-t border-[#333333]">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<a href="#home" class="text-2xl font-bold text-white">Niraj<span class="text-primary">.dev</span></a>
+<p class="text-gray-400 mt-2">Frontend Developer & UI/UX Designer</p>
+</div>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 hover:text-primary transition-colors social-icon" id="github-link" >
+<i class="ri-github-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors social-icon" id="linkedin-link">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<!-- <a href="#" class="text-gray-400 hover:text-primary transition-colors social-icon" id="dribble-link">
+<i class="ri-dribbble-fill ri-lg"></i>
+</a> -->
+<a href="#" class="text-gray-400 hover:text-primary transition-colors social-icon" id="behance-link">
+<i class="ri-behance-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-[#333333] mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Niraj Dev. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 pulse">
+<a href="#home" class="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-all ripple">
+<i class="ri-arrow-up-line text-white ri-lg"></i>
+</a>
+</div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
