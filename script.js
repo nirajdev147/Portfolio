@@ -1,4 +1,3 @@
-
 // Mobile Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -266,4 +265,51 @@ document.getElementById('behance-link').addEventListener('click', function(event
     event.preventDefault(); // Prevent the default link behavior
     window.open('https://www.behance.net/24246c72', '_blank'); // Open Behance to a new tab
   });
-  
+
+// Optimize animations for mobile
+const isMobile = window.matchMedia('(max-width: 640px)').matches;
+
+if (isMobile) {
+  // Reduce particle count on mobile
+  const particleCount = 15; // Half of desktop
+
+  // Disable heavy animations on mobile
+  const disableHeavyAnimations = () => {
+    document.querySelectorAll('.spotlight').forEach(el => {
+      el.classList.remove('spotlight');
+    });
+    
+    document.querySelectorAll('.rotate-3d').forEach(el => {
+      el.classList.remove('rotate-3d');
+    });
+  }
+
+  // Add touch event handlers for mobile
+  document.addEventListener('touchstart', function(e) {
+    // Handle touch events for buttons
+    if (e.target.classList.contains('ripple')) {
+      e.target.classList.add('active');
+      setTimeout(() => {
+        e.target.classList.remove('active');
+      }, 300);
+    }
+  });
+
+  // Optimize scroll performance on mobile
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        checkVisibility();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Initialize mobile optimizations
+  window.addEventListener('load', () => {
+    disableHeavyAnimations();
+    createParticles();
+  });
+}

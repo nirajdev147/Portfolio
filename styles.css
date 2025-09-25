@@ -334,3 +334,69 @@ animation: spotlight-move 2s infinite;
 75% { transform: translate(-30%, 30%); }
 100% { transform: translate(-30%, -30%); }
 }
+
+/* Base responsive styles */
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Adjust skill cards on mobile */
+  .skill-card {
+    padding: 1rem;
+  }
+
+  /* Adjust portfolio items on mobile */
+  .portfolio-item {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust contact form on mobile */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+  }
+
+  /* Adjust navigation spacing */
+  .nav-glass {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Adjust footer spacing */
+  footer {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Adjust animations for mobile devices */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 640px) {
+  button,
+  .social-icon,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

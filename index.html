@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Update meta viewport tag to ensure proper mobile scaling -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Portfolio | Niraj Dev</title>
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#6C63FF',secondary:'#121212'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
@@ -75,12 +76,12 @@
 
 <!-- Skills Section -->
 <section id="skills" class="py-20 bg-[#1a1a1a]">
-<div class="container mx-auto px-6">
+<div class="container mx-auto px-4 sm:px-6">
 <div class="text-center mb-16 section-transition">
 <h2 class="text-4xl font-bold mb-4">My <span class="text-gradient">Skills</span></h2>
 <p class="text-gray-300 max-w-2xl mx-auto">I've spent years honing my skills in frontend development and design. Here's what I bring to the table.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
 <!-- HTML Skill -->
 <div class="bg-[#222222] p-6 rounded-lg skill-card section-transition rotate-3d">
 <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto pulse">
@@ -140,20 +141,30 @@
 
 <!-- Portfolio Section -->
 <section id="portfolio" class="py-20">
-<div class="container mx-auto px-6">
+<div class="container mx-auto px-4 sm:px-6">
 <div class="text-center mb-16 section-transition">
 <h2 class="text-4xl font-bold mb-4">My <span class="text-gradient">Portfolio</span></h2>
 <p class="text-gray-300 max-w-2xl mx-auto">Here's a selection of my recent projects showcasing my skills and expertise.</p>
 </div>
-<div class="flex justify-center mb-10 section-transition">
-<div class="inline-flex bg-[#222222] p-1 rounded-full">
-<button class="portfolio-filter active px-6 py-2 rounded-full bg-primary text-white whitespace-nowrap" data-filter="all">All Projects</button>
-<button class="portfolio-filter px-6 py-2 rounded-full text-white hover:bg-[#333333] whitespace-nowrap" data-filter="web">Web Design</button>
-<button class="portfolio-filter px-6 py-2 rounded-full text-white hover:bg-[#333333] whitespace-nowrap" data-filter="ui">UI/UX</button>
-<button class="portfolio-filter px-6 py-2 rounded-full text-white hover:bg-[#333333] whitespace-nowrap" data-filter="app">App Design</button>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Updated filter buttons with better mobile wrapping -->
+    <div class="flex justify-center mb-10 section-transition">
+        <div class="inline-flex bg-[#222222] p-2 rounded-full flex-wrap justify-center gap-2 max-w-[95%]">
+            <button class="portfolio-filter active px-4 py-2 rounded-full bg-primary text-white text-sm sm:text-base" data-filter="all">
+                All Projects
+            </button>
+            <button class="portfolio-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="web">
+                Web Design
+            </button>
+            <button class="portfolio-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="ui">
+                UI/UX
+            </button>
+            <button class="portfolio-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="app">
+                App Design
+            </button>
+        </div>
+    </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
 <!-- Portfolio Item 1 -->
 <!-- <div class="portfolio-item section-transition spotlight" data-category="web">
 <div class="relative overflow-hidden rounded-lg">
