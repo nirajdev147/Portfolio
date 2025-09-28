@@ -95,17 +95,17 @@ transform: translate(-50%, -50%);
 z-index: 9999;
 transition: transform 0.1s, opacity 0.5s;
 }
-.portfolio-item {
+.projects-item {
 transition: transform 0.3s ease;
 }
-.portfolio-item:hover {
+.projects-item:hover {
 transform: translateY(-5px);
 }
-.portfolio-overlay {
+.projects-overlay {
 opacity: 0;
 transition: opacity 0.3s ease;
 }
-.portfolio-item:hover .portfolio-overlay {
+.projects-item:hover .projects-overlay {
 opacity: 1;
 }
 input:focus, textarea:focus {
@@ -359,8 +359,8 @@ animation: spotlight-move 2s infinite;
     padding: 1rem;
   }
 
-  /* Adjust portfolio items on mobile */
-  .portfolio-item {
+  /* Adjust projects items on mobile */
+  .projects-item {
     margin-bottom: 1rem;
   }
 

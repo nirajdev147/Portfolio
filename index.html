@@ -26,7 +26,7 @@
 <div class="hidden md:flex space-x-8">
 <a href="#home" class="text-white hover:text-primary transition-colors">Home</a>
 <a href="#skills" class="text-white hover:text-primary transition-colors">Skills</a>
-<a href="#portfolio" class="text-white hover:text-primary transition-colors">Portfolio</a>
+<a href="#projects" class="text-white hover:text-primary transition-colors">Projects</a>
 <a href="#contact" class="text-white hover:text-primary transition-colors">Contact</a>
 </div>
 <div class="md:hidden w-8 h-8 flex items-center justify-center cursor-pointer" id="menu-toggle">
@@ -40,7 +40,7 @@
 <div class="flex flex-col space-y-4">
 <a href="#home" class="text-white hover:text-primary transition-colors py-2">Home</a>
 <a href="#skills" class="text-white hover:text-primary transition-colors py-2">Skills</a>
-<a href="#portfolio" class="text-white hover:text-primary transition-colors py-2">Portfolio</a>
+<a href="#projects" class="text-white hover:text-primary transition-colors py-2">projects</a>
 <a href="#contact" class="text-white hover:text-primary transition-colors py-2">Contact</a>
 </div>
 </div>
@@ -61,7 +61,7 @@
 <h2 class="text-2xl md:text-3xl font-light mb-6">Frontend Developer & UI/UX Designer</h2>
 <p class="text-gray-300 mb-8 max-w-lg">I craft beautiful, functional, and user-centered digital experiences. With expertise in HTML, CSS, JavaScript, and UI/UX design, I transform ideas into engaging interfaces.</p>
 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-<a href="#portfolio" class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap ripple glow-effect">View My Work</a>
+<a href="#projects" class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap ripple glow-effect">View My Work</a>
 <a href="#contact" class="border border-white text-white px-8 py-3 !rounded-button font-medium hover:bg-white hover:text-secondary transition-all whitespace-nowrap ripple magnetic-button">Contact Me</a>
 </div>
 </div>
@@ -140,113 +140,94 @@
 </section>
 
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-20">
+<!-- Projects Section -->
+<section id="projects" class="py-20">
 <div class="container mx-auto px-4 sm:px-6">
 <div class="text-center mb-16 section-transition">
-<h2 class="text-4xl font-bold mb-4">My <span class="text-gradient">Portfolio</span></h2>
+<h2 class="text-4xl font-bold mb-4">My <span class="text-gradient">Projects</span></h2>
 <p class="text-gray-300 max-w-2xl mx-auto">Here's a selection of my recent projects showcasing my skills and expertise.</p>
 </div>
     
     <!-- Updated filter buttons with better mobile wrapping -->
     <div class="flex justify-center mb-10 section-transition">
         <div class="inline-flex bg-[#222222] p-2 rounded-full flex-wrap justify-center gap-2 max-w-[95%]">
-            <button class="portfolio-filter active px-4 py-2 rounded-full bg-primary text-white text-sm sm:text-base" data-filter="all">
+            <button class="projects-filter active px-4 py-2 rounded-full bg-primary text-white text-sm sm:text-base" data-filter="all">
                 All Projects
             </button>
-            <button class="portfolio-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="web">
+            <button class="projects-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="web">
                 Web Design
             </button>
-            <button class="portfolio-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="ui">
+            <button class="projects-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="ui">
                 UI/UX
             </button>
-            <button class="portfolio-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="app">
+            <button class="projects-filter px-4 py-2 rounded-full text-white hover:bg-[#333333] text-sm sm:text-base" data-filter="app">
                 App Design
             </button>
         </div>
     </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-<!-- Portfolio Item 1 -->
-<!-- <div class="portfolio-item section-transition spotlight" data-category="web">
-<div class="relative overflow-hidden rounded-lg">
-<img src="/images/webpage1.png" alt="Bharatloads landing page" class="w-full h-64 object-cover">
-<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
-<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Luxury Bharatloads Platform">BharatLoads Landing Page Design</h3>
-<p class="text-gray-300 text-center mb-4">Responsive bharatloads website with modern UI.</p>
-<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
-</div>
-</div>
-</div> -->
-<!-- Portfolio Item 2 -->
-<!-- <div class="portfolio-item section-transition spotlight" data-category="web">
-<div class="relative overflow-hidden rounded-lg">
-<img src="/images/webpage2.png" alt="Portfolio webpage design" class="w-full h-64 object-cover">
-<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
-<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Portfolio Webpage Platform">Portfolio Webpage Design</h3>
-<p class="text-gray-300 text-center mb-4">A clean portfolio webpage design with modern UI.</p>
-<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
-</div>
-</div>
-</div> -->
 
-<!-- Portfolio Item 3 -->
-<div class="portfolio-item section-transition spotlight" data-category="ui">
+
+
+<!-- projects Item 1 -->
+<div class="projects-item section-transition spotlight" data-category="web">
 <div class="relative overflow-hidden rounded-lg">
-<img src="/images/webpage1.png" alt="Bharatloads landing page" class="w-full h-64 object-cover">
-<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
-<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Luxury Bharatloads Platform">BharatLoads Landing Page Design</h3>
-<p class="text-gray-300 text-center mb-4">Responsive bharatloads website with modern UI.</p>
-<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+<img src="/images/webpage2.png" alt="bookstore landing page design" class="w-full h-64 object-cover">
+<div class="projects-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="projects Webpage Platform">BookStore HomePage Design</h3>
+<p class="text-gray-300 text-center mb-4">A single-vendor online book store homepage.</p>
+<a href="https://www.behance.net/gallery/233273343/Book-Store-Home-Page" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
 </div>
 </div>
 </div>
 
-<!-- Portfolio Item 4 -->
-<div class="portfolio-item section-transition spotlight" data-category="ui">
-  <div class="relative overflow-hidden rounded-lg">
-  <img src="/images/webpage2.png" alt="Portfolio webpage design" class="w-full h-64 object-cover">
-  <div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
-  <h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Portfolio Webpage Platform">Portfolio Webpage Design</h3>
-  <p class="text-gray-300 text-center mb-4">A clean portfolio webpage design with modern UI.</p>
-  <a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
-  </div>
-  </div>
-  </div>
-<!-- Portfolio Item 5 -->
-<div class="portfolio-item section-transition spotlight" data-category="ui">
+<!-- projects Item 2 -->
+<div class="projects-item section-transition spotlight" data-category="web">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/webpage1.png" alt="Bharatloads landing page" class="w-full h-64 object-cover">
+<div class="projects-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Luxury Bharatloads Platform">BharatLoads Landing Page Design</h3>
+<p class="text-gray-300 text-center mb-4">Bharatloads website with modern UI.</p>
+<a href="https://www.behance.net/gallery/222543955/BharatLoads_landing_page_ndxDesign" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+</div>
+</div>
+</div>
+
+<!-- projects Item 3 -->
+<div class="projects-item section-transition spotlight" data-category="ui">
 <div class="relative overflow-hidden rounded-lg">
 <img src="/images/Dashboard design.png" alt="Finance App UI" class="w-full h-64 object-cover">
-<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<div class="projects-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
 <h3 class="text-xl font-semibold mb-2 reveal-text" data-text="Finance Dashboard UI">Finance Dashboard UI</h3>
 <p class="text-gray-300 text-center mb-4">Modern finance app interface with intuitive data visualization and user-friendly controls.</p>
-<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+<a href="https://www.behance.net/gallery/219462639/Financial-Dashboard-UI" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
 </div>
 </div>
 </div>
-<!-- Portfolio Item 6 -->
-<div class="portfolio-item section-transition" data-category="app">
+
+<!-- projects Item 4 -->
+<div class="projects-item section-transition" data-category="app">
 <div class="relative overflow-hidden rounded-lg">
 <img src="/images/App Design1.png" alt="Fitness App" class="w-full h-64 object-cover">
-<div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<div class="projects-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
 <h3 class="text-xl font-semibold mb-2">AI-POWERED-CHATBOT-DESIGN</h3>
 <p class="text-gray-300 text-center mb-4">Comprehensive fitness application with workout tracking and progress visualization.</p>
-<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">View Project</a>
+<a href="https://www.behance.net/gallery/218789229/AI-POWERED-CHATBOT-DESIGN" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
 </div>
 </div>
 </div>
 
-
-<!-- Portfolio Item 7-->
-<div class="portfolio-item section-transition" data-category="app">
-  <div class="relative overflow-hidden rounded-lg">
-  <img src="/images/App Design2.png" alt="mobile app user registration design" class="w-full h-64 object-cover">
-  <div class="portfolio-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
-  <h3 class="text-xl font-semibold mb-2">Mobile App User Registration Flow</h3>
-  <p class="text-gray-300 text-center mb-4">The mobile app registration flow enables users to quickly sign up and start using the app.</p>
-  <a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">View Project</a>
-  </div>
-  </div>
-  </div>
+<!-- projects Item 5 -->
+<div class="projects-item section-transition" data-category="app">
+<div class="relative overflow-hidden rounded-lg">
+<img src="/images/App Design2.png" alt="mobile app user registration design" class="w-full h-64 object-cover">
+<div class="projects-overlay absolute inset-0 bg-secondary bg-opacity-80 flex flex-col justify-center items-center p-6">
+<h3 class="text-xl font-semibold mb-2">Mobile App User Registration Flow</h3>
+<p class="text-gray-300 text-center mb-4">The mobile app registration flow enables users to quickly sign up and start using the app.</p>
+<a href="https://www.behance.net/gallery/218816101/Mobile-App-User-Registration-Flow" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap ripple">View Project</a>
+</div>
+</div>
+</div>
 </section>
 
 

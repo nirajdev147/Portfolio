@@ -25,17 +25,17 @@ behavior: 'smooth'
 });
 });
 });
-// Portfolio Filtering
-const portfolioFilters = document.querySelectorAll('.portfolio-filter');
-const portfolioItems = document.querySelectorAll('.portfolio-item');
-portfolioFilters.forEach(filter => {
+// projects Filtering
+const projectsFilters = document.querySelectorAll('.projects-filter');
+const projectsItems = document.querySelectorAll('.projects-item');
+projectsFilters.forEach(filter => {
 filter.addEventListener('click', () => {
 // Remove active class from all filters
-portfolioFilters.forEach(f => f.classList.remove('active', 'bg-primary'));
+projectsFilters.forEach(f => f.classList.remove('active', 'bg-primary'));
 // Add active class to clicked filter
 filter.classList.add('active', 'bg-primary');
 const filterValue = filter.getAttribute('data-filter');
-portfolioItems.forEach(item => {
+projectsItems.forEach(item => {
 if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
 item.style.display = 'block';
 } else {
