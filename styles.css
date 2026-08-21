@@ -409,17 +409,3 @@ animation: spotlight-move 2s infinite;
     min-width: 44px;
   }
 }
-
-
-/* Fix Desktop Zooming & Infinite Content Stretching */
-@media screen and (min-width: 1024px) {
-    body {
-        max-width: 1280px;      /* Locks layout width so elements don't blow up on wide screens */
-        margin: 0 auto;         /* Perfectly centers your entire website on the monitor */
-        box-shadow: 0 0 50px rgba(0,0,0,0.5); /* Optional: Soft edge glow for clean borders */
-    }
-    
-    .animated-bg {
-        max-width: 100vw;       /* Ensures your cool animated background stays full screen width */
-    }
-}
