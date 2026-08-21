@@ -1,5 +1,14 @@
 :where([class^="ri-"])::before { content: "\f3c2"; }
 
+html {
+box-sizing: border-box;
+font-size: 100%;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
 body {
 font-family: 'Poppins', sans-serif;
 scroll-behavior: smooth;
